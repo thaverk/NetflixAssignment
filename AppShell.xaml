@@ -6,21 +6,24 @@
     xmlns:local="clr-namespace:MyFirstMauiApplication"
     
     Shell.FlyoutBehavior="Disabled"
-    Title="MyFirstMauiApplication">
+    Title="MyFirstMauiApplication" BackgroundColor="Black">
 
-
-   
-        <ShellContent Title="Profile" ContentTemplate="{DataTemplate local:Profile}" Route="Profile" />
-
-        <TabBar>
-        <Tab Title="Home" Icon="mortgage.png">
-        <ShellContent  Title="Home" ContentTemplate="{DataTemplate local:MainPage}" Route="MainPage"/>
+  
+    <TabBar>
+        
+        <Tab Title="Home" Icon="hometab.svg">
+        <ShellContent ContentTemplate="{DataTemplate local:HomePage}" Route="HomePage"/>
         </Tab>
             
-            <Tab Title="Content" Icon="mortgage.png">
+            <Tab Title="Games" Icon="game.svg">
             <ShellContent Title="Content" ContentTemplate="{DataTemplate local:HomePage}" Route="HomePage" />
         </Tab>
-</TabBar>
+        <Tab Title="My Profile" Icon="dotnet_bot.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Profile}" />
+        </Tab>
+    
+    
+    </TabBar>
    
 
 </Shell>

@@ -2,11 +2,280 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMauiApplication.HomePage"
-             Title="HomePage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             Title="" BackgroundColor="Black">
+
+    <ScrollView >
+        <VerticalStackLayout >
+            
+            <HorizontalStackLayout>
+                <Image Source="netflixlogo.png"  HeightRequest="47" HorizontalOptions="Start" Margin="5,10"/>
+                <Image Source="search.png" HeightRequest="30" HorizontalOptions="End" Margin="269,0,0,0" />
+            </HorizontalStackLayout>   
+       
+            <VerticalStackLayout Padding="7,0,0,0">
+                <HorizontalStackLayout>
+                <Frame HeightRequest="30"
+                WidthRequest="80"
+                 CornerRadius="20"
+                HorizontalOptions="Center"
+                 IsClippedToBounds="True"
+                Padding="0"
+                BackgroundColor="Black"
+                BorderColor="White"
+                Margin="9,15,10,10"
+                 >
+                    <Label Text="TV Shows" VerticalOptions="Center" Margin="9,0,0,0"/>
+                </Frame>
+
+                    <Frame HeightRequest="30"
+                     WidthRequest="70"
+                      CornerRadius="20"
+                        HorizontalOptions="Center"
+                         IsClippedToBounds="True"
+                         Padding="0"
+                         BackgroundColor="Black"
+                         BorderColor="White"
+                         Margin="3,15,10,10">
+
+                        <Label Text="Movies" VerticalOptions="Center" Margin="14,0,0,0"/>
+                    </Frame>
+
+                </HorizontalStackLayout>
+                
+               
+                <Frame HeightRequest="260"
+                WidthRequest="180"
+                CornerRadius="20"
+                 HorizontalOptions="Center"
+                 IsClippedToBounds="True"
+                Padding="0"
+                BackgroundColor="Black"
+                   BorderColor="White"
+                Margin="10,30,10,0">
+                    <Image Source="flash.jpg" Aspect="AspectFill" HeightRequest="260" WidthRequest="200">
+                    </Image>
+                  
+                    </Frame>
+     
+           </VerticalStackLayout>
+
+            <HorizontalStackLayout>
+            <Frame HeightRequest="30"
+              WidthRequest="60"
+              CornerRadius="5"
+              HorizontalOptions="Start"
+              IsClippedToBounds="True"
+              Padding="0"
+              BackgroundColor="White"
+               BorderColor="White"
+               Margin="105,10,0,20">
+
+
+                <Image Source="playbutton.png" HeightRequest="14" WidthRequest="35" HorizontalOptions="Center"/>
+
+
+            </Frame>
+                <Frame HeightRequest="30"
+                  WidthRequest="60"
+                  CornerRadius="5"
+                  HorizontalOptions="Start"
+                  IsClippedToBounds="True"
+                  Padding="0"
+                  BackgroundColor="White"
+                   BorderColor="White"
+                   Margin="40,10,0,20">
+
+
+                    <Image Source="add.png" HeightRequest="22" WidthRequest="35" HorizontalOptions="Center"/>
+
+                </Frame>
+
+            </HorizontalStackLayout>
+
+            <Label Text="Recommended for You!" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,30,0,0"/>
+          
+            
+                <ScrollView Orientation="Horizontal" >
+
+                <Grid ColumnDefinitions="*,*,*,*,*,*"
+                      RowDefinitions="*">
+
+                    
+
+                    <Frame Grid.Row="0" Grid.ColumnSpan="0"
+                        HeightRequest="120"
+                      WidthRequest="80"
+                      CornerRadius="5"
+                      HorizontalOptions="Start"
+                      IsClippedToBounds="True"
+                      Padding="0"
+                      BackgroundColor="White"
+                       BorderColor="White"
+                       Margin="16,10,0,20">
+
+                        <Image Source="shadowhunters.jpg" Aspect="AspectFill"/>
+                    </Frame>
+                    
+                    
+                    
+                        <Frame Grid.Row="0" Grid.Column="1"
+                        HeightRequest="120"
+                      WidthRequest="80"
+                      CornerRadius="5"
+                      HorizontalOptions="Start"
+                      IsClippedToBounds="True"
+                      Padding="0"
+                      BackgroundColor="White"
+                       BorderColor="White"
+                       Margin="16,10,0,20">
+
+
+                        <Image Source="suits.png" Aspect="AspectFill"/>
+
+                    </Frame>
+                    
+                        <Frame Grid.Row="0" Grid.Column="2"
+                        HeightRequest="120"
+                      WidthRequest="80"
+                      CornerRadius="5"
+                      HorizontalOptions="Start"
+                      IsClippedToBounds="True"
+                      Padding="0"
+                      BackgroundColor="White"
+                       BorderColor="White"
+                       Margin="16,10,0,20">
+
+
+                        <Image Source="arrow.png" Aspect="AspectFill"/>
+
+                    </Frame>
+
+                    
+                    
+
+                    <Frame Grid.Row="0" Grid.Column="3"
+                      HeightRequest="120"
+                    WidthRequest="80"
+                    CornerRadius="5"
+                    HorizontalOptions="Start"
+                    IsClippedToBounds="True"
+                    Padding="0"
+                    BackgroundColor="White"
+                     BorderColor="White"
+                     Margin="16,10,0,20">           
+
+
+                        <Image Source="vampirediaries.jpg" Aspect="AspectFill"/>
+
+                    </Frame>
+
+                    <Frame Grid.Row="0" Grid.Column="4"
+                      HeightRequest="120"
+                    WidthRequest="80"
+                    CornerRadius="5"
+                    HorizontalOptions="Start"
+                    IsClippedToBounds="True"
+                    Padding="0"
+                    BackgroundColor="White"
+                     BorderColor="White"
+                     Margin="16,10,0,20">       
+
+
+                        <Image Source="legends.jpg" Aspect="AspectFill"/>
+
+                    </Frame>
+
+                </Grid>
+                    </ScrollView>
+
+            <Label Text="Based on your Watched List" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,30,0,0"/>
+            <ScrollView Orientation="Horizontal">
+                <Grid ColumnDefinitions="*,*,*,*,*,*"
+                        RowDefinitions="*">
+                   
+                    <Frame Grid.Row="0" Grid.Column="0"
+                      HeightRequest="120"
+                    WidthRequest="80"
+                    CornerRadius="5"
+                    HorizontalOptions="Start"
+                    IsClippedToBounds="True"
+                    Padding="0"
+                    BackgroundColor="White"
+                     BorderColor="White"
+                     Margin="16,10,0,20">
+                        <Image Source="bigbang.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                    <Frame Grid.Row="0" Grid.Column="1"
+                      HeightRequest="120"
+                    WidthRequest="80"
+                    CornerRadius="5"
+                    HorizontalOptions="Start"
+                    IsClippedToBounds="True"
+                    Padding="0"
+                    BackgroundColor="White"
+                     BorderColor="White"
+                     Margin="16,10,0,20">
+                        <Image Source="youngsh.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                    <Frame Grid.Row="0" Grid.Column="2"
+                    HeightRequest="120"
+                  WidthRequest="80"
+                  CornerRadius="5"
+                  HorizontalOptions="Start"
+                  IsClippedToBounds="True"
+                  Padding="0"
+                  BackgroundColor="White"
+                   BorderColor="White"
+                   Margin="16,10,0,20">
+                        <Image Source="superg.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                    <Frame Grid.Row="0" Grid.Column="3"
+                      HeightRequest="120"
+                    WidthRequest="80"
+                    CornerRadius="5"
+                    HorizontalOptions="Start"
+                    IsClippedToBounds="True"
+                    Padding="0"
+                    BackgroundColor="White"
+                     BorderColor="White"
+                     Margin="16,10,0,20">       
+                        <Image Source="onep.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+                    <Frame Grid.Row="0" Grid.Column="4"
+                      HeightRequest="120"
+                    WidthRequest="80"
+                    CornerRadius="5"
+                    HorizontalOptions="Start"
+                    IsClippedToBounds="True"
+                    Padding="0"
+                    BackgroundColor="White"
+                     BorderColor="White"
+                     Margin="16,10,0,20">
+                        <Image Source="lucif.jpg" Aspect="AspectFill"/>
+                    </Frame>
+
+
+
+
+
+
+                </Grid>
+
+
+
+            </ScrollView>
+            
+
+
+        </VerticalStackLayout>
+
+
+    </ScrollView>
+
+
+
 </ContentPage>

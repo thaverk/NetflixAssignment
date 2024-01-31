@@ -65,8 +65,36 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\BebasNeue-Regular.ttf" />
+	  <None Remove="Resources\Images\add.png" />
+	  <None Remove="Resources\Images\arrow.png" />
 	  <None Remove="Resources\Images\editicon.png" />
+	  <None Remove="Resources\Images\flash.jpg" />
+	  <None Remove="Resources\Images\game.svg" />
+	  <None Remove="Resources\Images\hometab.svg" />
+	  <None Remove="Resources\Images\legends.jpg" />
 	  <None Remove="Resources\Images\netflixlogo.png" />
+	  <None Remove="Resources\Images\playbutton.png" />
+	  <None Remove="Resources\Images\profilepic.jpg" />
+	  <None Remove="Resources\Images\search.svg" />
+	  <None Remove="Resources\Images\shadowhunters.jpg" />
+	  <None Remove="Resources\Images\Suits.jpg" />
+	  <None Remove="Resources\Images\vampirediaries.jpg" />
+	  <None Remove="Resources\You might like list\bigbang.jpg" />
+	  <None Remove="Resources\You might like list\lucif.jpg" />
+	  <None Remove="Resources\You might like list\onep.jpg" />
+	  <None Remove="Resources\You might like list\superg.jpg" />
+	  <None Remove="Resources\You might like list\youngsh.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\You might like list\superg.jpg" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiImage Include="Resources\You might like list\bigbang.jpg" />
+	  <MauiImage Include="Resources\You might like list\lucif.jpg" />
+	  <MauiImage Include="Resources\You might like list\onep.jpg" />
+	  <MauiImage Include="Resources\You might like list\youngsh.jpg" />
 	</ItemGroup>
 
 	
