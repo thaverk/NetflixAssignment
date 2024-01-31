@@ -110,7 +110,7 @@
                       IsClippedToBounds="True"
                       Padding="0"
                       BackgroundColor="White"
-                       BorderColor="White"
+                       BorderColor="White" 
                        Margin="16,10,0,20">
 
                         <Image Source="shadowhunters.jpg" Aspect="AspectFill"/>

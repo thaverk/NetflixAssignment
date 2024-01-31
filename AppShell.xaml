@@ -8,7 +8,7 @@
     Shell.FlyoutBehavior="Disabled"
     Title="MyFirstMauiApplication" BackgroundColor="Black">
 
-  
+    <ShellContent ContentTemplate="{DataTemplate local:Profile}" Route="Profile"/>
     <TabBar>
         
         <Tab Title="Home" Icon="hometab.svg">
