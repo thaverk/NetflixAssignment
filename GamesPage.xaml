@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyFirstMauiApplication.GamesPage"
+             Title="" BackgroundColor="Black">
+    
+   
+    <ScrollView >
+        <VerticalStackLayout >
+
+            <HorizontalStackLayout>
+                <Label Text="Games" FontSize="25" HorizontalOptions="Start" Margin="3,10"/>
+                <Image Source="search.png" HeightRequest="30" HorizontalOptions="End" Margin="250,0,0,0" />
+            </HorizontalStackLayout>
+
+            <VerticalStackLayout Padding="0,-12,0,0">
+                
+                <Frame HeightRequest="240"
+            WidthRequest="240"
+            CornerRadius="29"
+             HorizontalOptions="Center"
+             IsClippedToBounds="True"
+            Padding="0"
+           
+                       BackgroundColor="Violet"
+               BorderColor="White"
+            Margin="10,30,10,0">
+                   
+                    <Image Source="love_is_blind.png" VerticalOptions="Center">
+                        <Image.Shadow>
+                            <Shadow Brush="Purple"
+                           
+                                    Offset="20,20"
+                            Radius="-100"
+                            Opacity="0.8" />        
+                        </Image.Shadow>
+                    </Image>
+
+
+
+                </Frame>
+                <Label Text="Love is Blind: Netflix Stories" FontSize="Title"  TextColor="White" HorizontalOptions="Center" FontAttributes="Bold" FontAutoScalingEnabled="True"/>
+            </VerticalStackLayout>
+
+            <HorizontalStackLayout>
+             
+
+            </HorizontalStackLayout>
+
+            <Label Text="Based On What You Played!" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,30,0,0"/>
+
+
+            <ScrollView Orientation="Horizontal" >
+
+                <Grid ColumnDefinitions="*,*,*,*,*"
+RowDefinitions="*">
+
+
+
+                    <Frame Grid.Row="0" Grid.ColumnSpan="0"
+                      HeightRequest="80"
+                    WidthRequest="80"
+                    CornerRadius="15"
+                    HorizontalOptions="Start"
+                    IsClippedToBounds="True"
+                    Padding="0"
+                    BackgroundColor="White"
+                     BorderColor="White" 
+                     Margin="16,10,0,20">
+
+                        <Image Source="dead_cells.png" Aspect="AspectFill"/>
+                    </Frame>
+                    <Label Grid.Column="0" Text="Dead  Cells" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+
+                    <Frame Grid.Row="0" Grid.Column="1"
+                  HeightRequest="80"
+                WidthRequest="80"
+                CornerRadius="20"
+                HorizontalOptions="Start"
+                IsClippedToBounds="True"
+                Padding="0"
+                BackgroundColor="White"
+                 BorderColor="White"
+                 Margin="16,10,0,20">
+
+
+                        <Image Source="dust_and_neon.png" />
+
+                    </Frame>
+                    <Label Grid.Column="1"  Text="Dust n' Neon" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+                    <Frame Grid.Row="0" Grid.Column="2"
+                  HeightRequest="80"
+                WidthRequest="80"
+                CornerRadius="15"
+                HorizontalOptions="Start"
+                IsClippedToBounds="True"
+                Padding="0"
+                BackgroundColor="White"
+                 BorderColor="White"
+                 Margin="16,10,0,20">
+
+
+                        <Image Source="scriptic_crime_stories.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="2" Text="Scriptic Crime" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+                    <Frame Grid.Row="0" Grid.Column="3"
+              HeightRequest="80"
+            WidthRequest="80"
+            CornerRadius="15"
+            HorizontalOptions="Start"
+            IsClippedToBounds="True"
+            Padding="0"
+            BackgroundColor="White"
+             BorderColor="White"
+             Margin="16,10,0,20">
+
+
+                        <Image Source="tomb_raider_reloaded.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="3" Text="Tomb Raider" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+                    <Frame Grid.Row="0" Grid.Column="4"
+              HeightRequest="80"
+            WidthRequest="80"
+            CornerRadius="20"
+            HorizontalOptions="Start"
+            IsClippedToBounds="True"
+            Padding="0"
+            BackgroundColor="White"
+             BorderColor="White"
+             Margin="16,10,0,20">
+
+
+                        <Image Source="transformers_forged_to_fight.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="4" Text="Transformers" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+                </Grid>
+            </ScrollView>
+
+
+
+
+            <Label Text="Recently Added!" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,30,0,0"/>
+
+
+            <ScrollView Orientation="Horizontal" >
+
+                <Grid ColumnDefinitions="*,*,*,*,*"
+      RowDefinitions="*">
+
+
+
+                    <Frame Grid.Row="0" Grid.ColumnSpan="0"
+                    HeightRequest="80"
+                  WidthRequest="80"
+                  CornerRadius="15"
+                  HorizontalOptions="Start"
+                  IsClippedToBounds="True"
+                  Padding="0"
+                  BackgroundColor="White"
+                   BorderColor="White" 
+                   Margin="16,10,0,20">
+
+                        <Image Source="deaths_door.png" Aspect="AspectFill"/>
+                    </Frame>
+                    <Label Grid.Column="0" Text="Death's Door" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+
+                    <Frame Grid.Row="0" Grid.Column="1"
+                        HeightRequest="80"
+                      WidthRequest="80"
+                      CornerRadius="20"
+                      HorizontalOptions="Start"
+                      IsClippedToBounds="True"
+                      Padding="0"
+                      BackgroundColor="White"
+                       BorderColor="White"
+                       Margin="16,10,0,20">
+
+
+                        <Image Source="farming_simulator.png" />
+
+                    </Frame>
+                    <Label Grid.Column="1"  Text="Farm Sim 13" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+                    <Frame Grid.Row="0" Grid.Column="2"
+                        HeightRequest="80"
+                      WidthRequest="80"
+                      CornerRadius="15"
+                      HorizontalOptions="Start"
+                      IsClippedToBounds="True"
+                      Padding="0"
+                      BackgroundColor="White"
+                       BorderColor="White"
+                       Margin="16,10,0,20">
+
+
+                        <Image Source="fashionverse.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="2" Text="FashionVerse" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+                    <Frame Grid.Row="0" Grid.Column="3"
+                    HeightRequest="80"
+                  WidthRequest="80"
+                  CornerRadius="15"
+                  HorizontalOptions="Start"
+                  IsClippedToBounds="True"
+                  Padding="0"
+                  BackgroundColor="White"
+                   BorderColor="White"
+                   Margin="16,10,0,20">
+
+
+                        <Image Source="moneyheist.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="3" Text="Money Heist" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+                    <Frame Grid.Row="0" Grid.Column="4"
+                    HeightRequest="80"
+                  WidthRequest="80"
+                  CornerRadius="20"
+                  HorizontalOptions="Start"
+                  IsClippedToBounds="True"
+                  Padding="0"
+                  BackgroundColor="White"
+                   BorderColor="White"
+                   Margin="16,10,0,20">
+
+
+                        <Image Source="word_trails.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="4" Text="Word Trails" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+                </Grid>
+            </ScrollView>
+
+
+
+            <Label Text="Grand Theft Auto: Definitive Edition!" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,30,0,0"/>
+
+
+            <ScrollView Orientation="Horizontal" >
+
+                <Grid ColumnDefinitions="*,*,*"
+                  RowDefinitions="*">
+
+                    
+
+                    <Frame Grid.Row="0" Grid.ColumnSpan="0"
+                    HeightRequest="80"
+                  WidthRequest="80"
+                  CornerRadius="15"
+                  HorizontalOptions="Start"
+                  IsClippedToBounds="True"
+                  Padding="0"
+                  BackgroundColor="White"
+                   BorderColor="White" 
+                   Margin="16,10,0,20">
+
+                        <Image Source="grand_theft_auto_iii.png" Aspect="AspectFill"/>
+                    </Frame>
+                    <Label Grid.Column="0" Text="GTA III" Margin="35,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+
+                    <Frame Grid.Row="0" Grid.Column="1"
+                    HeightRequest="80"
+                  WidthRequest="80"
+                  CornerRadius="15"
+                  HorizontalOptions="Start"
+                  IsClippedToBounds="True"
+                  Padding="0"
+                  BackgroundColor="White"
+                   BorderColor="White"
+                   Margin="16,10,0,20">
+
+
+                        <Image Source="grand_theft_auto_san_andreas.png" />
+
+                    </Frame>
+                    <Label Grid.Column="1"  Text="GTA:SA" Margin="35,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+                    
+                    <Frame Grid.Row="0" Grid.Column="2"
+                    HeightRequest="80"
+                  WidthRequest="80"
+                  CornerRadius="15"
+                  HorizontalOptions="Start"
+                  IsClippedToBounds="True"
+                  Padding="0"
+                  BackgroundColor="White"
+                   BorderColor="White"
+                   Margin="16,10,0,20">
+
+
+                        <Image Source="grand_theft_auto_vice_city.png" />
+                       
+                    </Frame>
+                   
+                    <Label Grid.Column="2" Text="GTA VC" Margin="35,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+                   
+
+
+                </Grid>
+            </ScrollView>
+
+            <Label Text="Stranger Things Series!!" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,15,0,0"/>
+            <ScrollView Orientation="Horizontal">
+                <Grid ColumnDefinitions="*,*,*"
+                    RowDefinitions="*">
+
+                    <Frame Grid.Row="0" Grid.Column="0"
+                          HeightRequest="80"
+                        WidthRequest="80"
+                        CornerRadius="15"
+                        HorizontalOptions="Start"
+                        IsClippedToBounds="True"
+                        Padding="0"
+                        BackgroundColor="White"
+                         BorderColor="White"
+                         Margin="16,10,0,20">
+
+
+                        <Image Source="st_1984_st.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="0" Text="ST:1984" Margin="35,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+                    <Frame Grid.Row="0" Grid.Column="1"
+                       HeightRequest="80"
+                     WidthRequest="80"
+                     CornerRadius="15"
+                     HorizontalOptions="Start"
+                     IsClippedToBounds="True"
+                     Padding="0"
+                     BackgroundColor="White"
+                      BorderColor="White"
+                      Margin="16,10,0,20">
+
+
+                        <Image Source="st3_thegame.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="1" Text="ST: The Game" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+                    <Frame Grid.Row="0" Grid.Column="2"
+                       HeightRequest="80"
+                     WidthRequest="80"
+                     CornerRadius="20"
+                     HorizontalOptions="Start"
+                     IsClippedToBounds="True"
+                     Padding="0"
+                     BackgroundColor="White"
+                      BorderColor="White"
+                      Margin="16,10,0,20">
+
+
+                    <Image Source="stranger_things_puzzle_tales.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="2" Text="ST: Puzzle Tales" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+
+
+                </Grid>
+
+
+
+            </ScrollView>
+
+            <Label Text="Stranger Things Series!!" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,15,0,0"/>
+            <ScrollView Orientation="Horizontal">
+                <Grid ColumnDefinitions="*,*,*,*,*,*,*"
+        RowDefinitions="*">
+
+                    <Frame Grid.Row="0" Grid.Column="0"
+                      HeightRequest="80"
+                    WidthRequest="80"
+                    CornerRadius="15"
+                    HorizontalOptions="Start"
+                    IsClippedToBounds="True"
+                    Padding="0"
+                    BackgroundColor="White"
+                     BorderColor="White"
+                     Margin="16,10,0,20">   
+
+
+                        <Image Source="cut_the_rope_daily.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="0" Text="Cut The Rope" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+                    <Frame Grid.Row="0" Grid.Column="1"
+                       HeightRequest="80"
+                     WidthRequest="80"
+                     CornerRadius="15"
+                     HorizontalOptions="Start"
+                     IsClippedToBounds="True"
+                     Padding="0"
+                     BackgroundColor="White"
+                      BorderColor="White"
+                      Margin="16,10,0,20">          
+
+
+                        <Image Source="rival_pirates.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="1" Text="Rival Pirates" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold" FontAutoScalingEnabled="True"/>
+
+                    <Frame Grid.Row="0" Grid.Column="2"
+                       HeightRequest="80"
+                     WidthRequest="80"
+                     CornerRadius="20"
+                     HorizontalOptions="Start"
+                     IsClippedToBounds="True"
+                     Padding="0"
+                     BackgroundColor="White"
+                      BorderColor="White"
+                      Margin="16,10,0,20">      
+
+
+                        <Image Source="shatter_remastered.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="2" Text="Shatter Remas" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+                    <Frame Grid.Row="0" Grid.Column="3"
+                        HeightRequest="80"
+                      WidthRequest="80"
+                      CornerRadius="20"
+                      HorizontalOptions="Start"
+                      IsClippedToBounds="True"
+                      Padding="0"
+                      BackgroundColor="White"
+                       BorderColor="White"
+                       Margin="16,10,0,20"> 
+
+
+                        <Image Source="shooting_hoops.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="3" Text="Shoot Hoops" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+                    <Frame Grid.Row="0" Grid.Column="4"
+                    HeightRequest="80"
+                  WidthRequest="80"
+                  CornerRadius="20"
+                  HorizontalOptions="Start"
+                  IsClippedToBounds="True"
+                  Padding="0"
+                  BackgroundColor="White"
+                   BorderColor="White"
+                   Margin="16,10,0,20"> 
+
+
+                        <Image Source="teeter.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="4" Text="Teeter" Margin="35,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+                    <Frame Grid.Row="0" Grid.Column="5"
+                    HeightRequest="80"
+                  WidthRequest="80"
+                  CornerRadius="20"
+                  HorizontalOptions="Start"
+                  IsClippedToBounds="True"
+                  Padding="0"
+                  BackgroundColor="White"
+                   BorderColor="White"
+                   Margin="16,10,0,20">
+
+
+                        <Image Source="wonderputt_forever.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="5" Text="WonderPutt" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+                    <Frame Grid.Row="0" Grid.Column="6"
+                      HeightRequest="80"
+                    WidthRequest="80"
+                    CornerRadius="20"
+                    HorizontalOptions="Start"
+                    IsClippedToBounds="True"
+                    Padding="0"
+                    BackgroundColor="White"
+                     BorderColor="White"
+                     Margin="16,10,0,20">   
+
+
+                        <Image Source="world_of_goo.png" />
+
+                    </Frame>
+
+                    <Label Grid.Column="6" Text="World of Goo" Margin="21,90,0,0" FontSize="Caption" FontAttributes="Bold"/>
+
+
+
+                </Grid>
+
+
+
+            </ScrollView>
+
+
+
+        </VerticalStackLayout>
+
+
+    </ScrollView>
+</ContentPage>

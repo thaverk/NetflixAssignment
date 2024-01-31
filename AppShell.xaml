@@ -16,7 +16,7 @@
         </Tab>
             
             <Tab Title="Games" Icon="game.svg">
-            <ShellContent Title="Content" ContentTemplate="{DataTemplate local:HomePage}" Route="HomePage" />
+            <ShellContent Title="Content" ContentTemplate="{DataTemplate local:GamesPage}" Route="GamesPage" />
         </Tab>
         <Tab Title="My Profile" Icon="dotnet_bot.png">
             <ShellContent ContentTemplate="{DataTemplate local:Profile}" />

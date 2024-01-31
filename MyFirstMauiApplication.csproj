@@ -65,6 +65,30 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Fonts\BebasNeue-Regular.ttf" />
+	  <None Remove="Resources\Games\GTA\grand_theft_auto_iii.png" />
+	  <None Remove="Resources\Games\GTA\grand_theft_auto_san_andreas.png" />
+	  <None Remove="Resources\Games\GTA\grand_theft_auto_vice_city.png" />
+	  <None Remove="Resources\Games\love_is_blind.png" />
+	  <None Remove="Resources\Games\Other_Games\dead_cells.png" />
+	  <None Remove="Resources\Games\Other_Games\dust_and_neon.png" />
+	  <None Remove="Resources\Games\Other_Games\scriptic_crime_stories.png" />
+	  <None Remove="Resources\Games\Other_Games\tomb_raider_reloaded.png" />
+	  <None Remove="Resources\Games\Other_Games\transformers_forged_to_fight.png" />
+	  <None Remove="Resources\Games\Physics_based\cut_the_rope_daily.png" />
+	  <None Remove="Resources\Games\Physics_based\rival_pirates.png" />
+	  <None Remove="Resources\Games\Physics_based\Shatter_Remastered.png" />
+	  <None Remove="Resources\Games\Physics_based\Shooting_Hoops.png" />
+	  <None Remove="Resources\Games\Physics_based\Teeter.png" />
+	  <None Remove="Resources\Games\Physics_based\wonderputt_forever.png" />
+	  <None Remove="Resources\Games\Physics_based\world_of_goo.png" />
+	  <None Remove="Resources\Games\Recently_Released\deaths_door.png" />
+	  <None Remove="Resources\Games\Recently_Released\farming_simulator.png" />
+	  <None Remove="Resources\Games\Recently_Released\fashionverse.png" />
+	  <None Remove="Resources\Games\Recently_Released\moneyheist.png" />
+	  <None Remove="Resources\Games\Recently_Released\word_trails.png" />
+	  <None Remove="Resources\Games\Stranger_things\ST3_TheGame.png" />
+	  <None Remove="Resources\Games\Stranger_things\stranger_things_puzzle_tales.png" />
+	  <None Remove="Resources\Games\Stranger_things\st_1984_st.png" />
 	  <None Remove="Resources\Images\add.png" />
 	  <None Remove="Resources\Images\arrow.png" />
 	  <None Remove="Resources\Images\editicon.png" />
@@ -79,6 +103,10 @@
 	  <None Remove="Resources\Images\shadowhunters.jpg" />
 	  <None Remove="Resources\Images\Suits.jpg" />
 	  <None Remove="Resources\Images\vampirediaries.jpg" />
+	  <None Remove="Resources\Profile Pics\profile_five.jpg" />
+	  <None Remove="Resources\Profile Pics\profile_four.jpg" />
+	  <None Remove="Resources\Profile Pics\profile_three.jpg" />
+	  <None Remove="Resources\Profile Pics\profile_two.jpg" />
 	  <None Remove="Resources\You might like list\bigbang.jpg" />
 	  <None Remove="Resources\You might like list\lucif.jpg" />
 	  <None Remove="Resources\You might like list\onep.jpg" />
@@ -87,6 +115,34 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiImage Include="Resources\Games\GTA\grand_theft_auto_iii.png" />
+	  <MauiImage Include="Resources\Games\GTA\grand_theft_auto_san_andreas.png" />
+	  <MauiImage Include="Resources\Games\GTA\grand_theft_auto_vice_city.png" />
+	  <MauiImage Include="Resources\Games\love_is_blind.png" />
+	  <MauiImage Include="Resources\Games\Other_Games\dead_cells.png" />
+	  <MauiImage Include="Resources\Games\Other_Games\dust_and_neon.png" />
+	  <MauiImage Include="Resources\Games\Other_Games\scriptic_crime_stories.png" />
+	  <MauiImage Include="Resources\Games\Other_Games\tomb_raider_reloaded.png" />
+	  <MauiImage Include="Resources\Games\Other_Games\transformers_forged_to_fight.png" />
+	  <MauiImage Include="Resources\Games\Physics_based\cut_the_rope_daily.png" />
+	  <MauiImage Include="Resources\Games\Physics_based\rival_pirates.png" />
+	  <MauiImage Include="Resources\Games\Physics_based\shatter_remastered.png" />
+	  <MauiImage Include="Resources\Games\Physics_based\shooting_hoops.png" />
+	  <MauiImage Include="Resources\Games\Physics_based\teeter.png" />
+	  <MauiImage Include="Resources\Games\Physics_based\wonderputt_forever.png" />
+	  <MauiImage Include="Resources\Games\Physics_based\world_of_goo.png" />
+	  <MauiImage Include="Resources\Games\Recently_Released\deaths_door.png" />
+	  <MauiImage Include="Resources\Games\Recently_Released\farming_simulator.png" />
+	  <MauiImage Include="Resources\Games\Recently_Released\fashionverse.png" />
+	  <MauiImage Include="Resources\Games\Recently_Released\moneyheist.png" />
+	  <MauiImage Include="Resources\Games\Recently_Released\word_trails.png" />
+	  <MauiImage Include="Resources\Games\Stranger_things\st3_thegame.png" />
+	  <MauiImage Include="Resources\Games\Stranger_things\stranger_things_puzzle_tales.png" />
+	  <MauiImage Include="Resources\Games\Stranger_things\st_1984_st.png" />
+	  <MauiImage Include="Resources\Profile Pics\profile_five.jpg" />
+	  <MauiImage Include="Resources\Profile Pics\profile_four.jpg" />
+	  <MauiImage Include="Resources\Profile Pics\profile_three.jpg" />
+	  <MauiImage Include="Resources\Profile Pics\profile_two.jpg" />
 	  <MauiImage Include="Resources\You might like list\superg.jpg" />
 	</ItemGroup>
 
@@ -107,13 +163,13 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="GamesPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Profile.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="SecondPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

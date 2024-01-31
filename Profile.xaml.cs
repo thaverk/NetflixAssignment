@@ -9,7 +9,7 @@ public partial class Profile : ContentPage
     public Profile()
 	{
 		InitializeComponent();
-        Routing.RegisterRoute("HomePage", typeof(HomePage));
+        Routing.RegisterRoute("//D_FAULT_TabBar11/D_FAULT_Tab8/HomePage", typeof(HomePage));
     }
 
 
@@ -18,9 +18,7 @@ public partial class Profile : ContentPage
     private async void ImageButton_Clicked(object sender, EventArgs e)
     {
 
-        await Shell.Current.GoToAsync("HomePage");
-        //Routing.RegisterRoute("AppShell", typeof(AppShell));
-        //await Shell.Current.Navigation.PushAsync( new AppShell());
-        //await Shell.Current.GoToAsync("Home");
+        await Shell.Current.GoToAsync("//D_FAULT_TabBar11/D_FAULT_Tab8/HomePage",true);
+
     }
 }
