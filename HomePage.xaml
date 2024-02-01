@@ -4,6 +4,18 @@
              x:Class="MyFirstMauiApplication.HomePage"
              Title="" BackgroundColor="Black">
 
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+            EndPoint="0,01">
+            <GradientStop Color="Maroon"
+                          Offset="0.1" />
+            <GradientStop Color="Black"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+
+    </ContentPage.Background>
+
     <ScrollView >
         <VerticalStackLayout >
             
@@ -20,11 +32,11 @@
                 HorizontalOptions="Center"
                  IsClippedToBounds="True"
                 Padding="0"
-                BackgroundColor="Black"
-                BorderColor="White"
+                BackgroundColor="Transparent"
+                BorderColor="LightGray"
                 Margin="9,15,10,10"
                  >
-                    <Label Text="TV Shows" VerticalOptions="Center" Margin="9,0,0,0"/>
+                        <Label Text="TV Shows" FontFamily="Poppins-SemiBold.ttf" TextColor="LightGray" VerticalOptions="Center" Margin="7,0,0,0"/>
                 </Frame>
 
                     <Frame HeightRequest="30"
@@ -33,31 +45,41 @@
                         HorizontalOptions="Center"
                          IsClippedToBounds="True"
                          Padding="0"
-                         BackgroundColor="Black"
-                         BorderColor="White"
+                         BackgroundColor="Transparent"
+                         BorderColor="LightGrey"
                          Margin="3,15,10,10">
 
-                        <Label Text="Movies" VerticalOptions="Center" Margin="14,0,0,0"/>
+                        <Label Text="Movies" TextColor="LightGray" FontFamily="Poppins-SemiBold.ttf" VerticalOptions="Center" Margin="12,0,0,0"/>
                     </Frame>
 
                 </HorizontalStackLayout>
+
                 
-               
-                <Frame HeightRequest="260"
-                WidthRequest="180"
-                CornerRadius="20"
+
+                   
+                        <Frame HeightRequest="259"
+                    HasShadow="True"
+                           WidthRequest="180"
+                CornerRadius="10"
                  HorizontalOptions="Center"
                  IsClippedToBounds="True"
-                Padding="0"
+                Padding="5"
                 BackgroundColor="Black"
-                   BorderColor="White"
+                   BorderColor="White" 
                 Margin="10,30,10,0">
-                    <Image Source="flash.jpg" Aspect="AspectFill" HeightRequest="260" WidthRequest="200">
-                    </Image>
-                  
-                    </Frame>
-     
-           </VerticalStackLayout>
+
+                            <Image  Source="flash.jpg"  Aspect="AspectFill" HeightRequest="260" WidthRequest="200">
+
+                            </Image>
+
+
+                        </Frame>
+                   
+               
+            
+        
+        
+        </VerticalStackLayout>
 
             <HorizontalStackLayout>
             <Frame HeightRequest="30"
@@ -92,7 +114,7 @@
 
             </HorizontalStackLayout>
 
-            <Label Text="Recommended for You!" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,30,0,0"/>
+            <Label Text="Recommended for You!" FontFamily="Poppins-SemiBold.ttf" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,30,0,0"/>
           
             
                 <ScrollView Orientation="Horizontal" >
@@ -178,17 +200,19 @@
                     Padding="0"
                     BackgroundColor="White"
                      BorderColor="White"
-                     Margin="16,10,0,20">       
+                     Margin="16,10,0,20">
 
-
-                        <Image Source="legends.jpg" Aspect="AspectFill"/>
+                        
+                        <Image Source="legends.jpg" Aspect="AspectFill">
+                           
+                        </Image>
 
                     </Frame>
 
                 </Grid>
                     </ScrollView>
 
-            <Label Text="Based on your Watched List" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,30,0,0"/>
+            <Label Text="Based on your Watched List" FontFamily="Poppins-SemiBold.ttf" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,30,0,0"/>
             <ScrollView Orientation="Horizontal">
                 <Grid ColumnDefinitions="*,*,*,*,*,*"
                         RowDefinitions="*">
@@ -277,5 +301,5 @@
     </ScrollView>
 
 
-
+    
 </ContentPage>

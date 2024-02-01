@@ -40,7 +40,8 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\netflix_94400.svg" Color="#512BD4" />
+		 
+		<MauiIcon Include="Resources\AppIcon\netflix_icon.svg" />
 	
 		
 		
@@ -54,7 +55,7 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
-		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" /> 
+		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />  
 
 		<!-- Custom Fonts -->
 		<MauiFont Include="Resources\Fonts\*" />
@@ -64,6 +65,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\AppIcon\netflix_icon.svg" />
 	  <None Remove="Resources\Fonts\BebasNeue-Regular.ttf" />
 	  <None Remove="Resources\Games\GTA\grand_theft_auto_iii.png" />
 	  <None Remove="Resources\Games\GTA\grand_theft_auto_san_andreas.png" />
@@ -96,6 +98,7 @@
 	  <None Remove="Resources\Images\game.svg" />
 	  <None Remove="Resources\Images\hometab.svg" />
 	  <None Remove="Resources\Images\legends.jpg" />
+	  <None Remove="Resources\Images\netflix.png" />
 	  <None Remove="Resources\Images\netflixlogo.png" />
 	  <None Remove="Resources\Images\playbutton.png" />
 	  <None Remove="Resources\Images\profilepic.jpg" />

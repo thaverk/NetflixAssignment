@@ -3,27 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyFirstMauiApplication.GamesPage"
              Title="" BackgroundColor="Black">
-    
-   
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0"
+         EndPoint="0,01">
+            <GradientStop Color="Violet"
+                       Offset="0.1" />
+            <GradientStop Color="Black"
+                       Offset="1.0" />
+        </LinearGradientBrush>
+
+    </ContentPage.Background>
     <ScrollView >
         <VerticalStackLayout >
 
             <HorizontalStackLayout>
-                <Label Text="Games" FontSize="25" HorizontalOptions="Start" Margin="3,10"/>
-                <Image Source="search.png" HeightRequest="30" HorizontalOptions="End" Margin="250,0,0,0" />
+                <Label Text="Games" FontSize="35" FontAttributes="Bold" FontFamily="BebasNeue-Regular.ttf" HorizontalOptions="Start" Margin="10,10"/>
+                <Image Source="search.png" HeightRequest="25" HorizontalOptions="End" Margin="230,0,0,0" />
             </HorizontalStackLayout>
 
             <VerticalStackLayout Padding="0,-12,0,0">
                 
-                <Frame HeightRequest="240"
-            WidthRequest="240"
+                <Frame HeightRequest="224"
+            WidthRequest="224"
             CornerRadius="29"
              HorizontalOptions="Center"
              IsClippedToBounds="True"
             Padding="0"
            
-                       BackgroundColor="Violet"
-               BorderColor="White"
+                      
             Margin="10,30,10,0">
                    
                     <Image Source="love_is_blind.png" VerticalOptions="Center">
@@ -39,7 +47,7 @@
 
 
                 </Frame>
-                <Label Text="Love is Blind: Netflix Stories" FontSize="Title"  TextColor="White" HorizontalOptions="Center" FontAttributes="Bold" FontAutoScalingEnabled="True"/>
+                <Label Text="Love is Blind: Netflix Stories" FontSize="22" FontFamily="Poppins-SemiBold.ttf" TextColor="White" HorizontalOptions="Center" FontAttributes="Bold" FontAutoScalingEnabled="True"/>
             </VerticalStackLayout>
 
             <HorizontalStackLayout>
@@ -47,7 +55,7 @@
 
             </HorizontalStackLayout>
 
-            <Label Text="Based On What You Played!" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,30,0,0"/>
+            <Label Text="Based On What You Played!" FontFamily="Poppins-SemiBold.ttf" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,30,0,0"/>
 
 
             <ScrollView Orientation="Horizontal" >
@@ -66,7 +74,7 @@ RowDefinitions="*">
                     Padding="0"
                     BackgroundColor="White"
                      BorderColor="White" 
-                     Margin="16,10,0,20">
+                     Margin="16,0,0,20">
 
                         <Image Source="dead_cells.png" Aspect="AspectFill"/>
                     </Frame>
@@ -82,7 +90,7 @@ RowDefinitions="*">
                 Padding="0"
                 BackgroundColor="White"
                  BorderColor="White"
-                 Margin="16,10,0,20">
+                 Margin="16,0,0,20">
 
 
                         <Image Source="dust_and_neon.png" />
@@ -99,7 +107,7 @@ RowDefinitions="*">
                 Padding="0"
                 BackgroundColor="White"
                  BorderColor="White"
-                 Margin="16,10,0,20">
+                 Margin="16,0,0,20">
 
 
                         <Image Source="scriptic_crime_stories.png" />
@@ -117,7 +125,7 @@ RowDefinitions="*">
             Padding="0"
             BackgroundColor="White"
              BorderColor="White"
-             Margin="16,10,0,20">
+             Margin="16,0,0,20">
 
 
                         <Image Source="tomb_raider_reloaded.png" />
@@ -135,7 +143,7 @@ RowDefinitions="*">
             Padding="0"
             BackgroundColor="White"
              BorderColor="White"
-             Margin="16,10,0,20">
+             Margin="16,0,0,20">
 
 
                         <Image Source="transformers_forged_to_fight.png" />
@@ -150,7 +158,7 @@ RowDefinitions="*">
 
 
 
-            <Label Text="Recently Added!" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,30,0,0"/>
+            <Label Text="Recently Added!" FontFamily="Poppins-SemiBold.ttf" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,30,0,0"/>
 
 
             <ScrollView Orientation="Horizontal" >
@@ -169,7 +177,7 @@ RowDefinitions="*">
                   Padding="0"
                   BackgroundColor="White"
                    BorderColor="White" 
-                   Margin="16,10,0,20">
+                   Margin="16,0,0,20">
 
                         <Image Source="deaths_door.png" Aspect="AspectFill"/>
                     </Frame>
@@ -185,7 +193,7 @@ RowDefinitions="*">
                       Padding="0"
                       BackgroundColor="White"
                        BorderColor="White"
-                       Margin="16,10,0,20">
+                       Margin="16,0,0,20">
 
 
                         <Image Source="farming_simulator.png" />
@@ -202,7 +210,7 @@ RowDefinitions="*">
                       Padding="0"
                       BackgroundColor="White"
                        BorderColor="White"
-                       Margin="16,10,0,20">
+                       Margin="16,0,0,20">
 
 
                         <Image Source="fashionverse.png" />
@@ -220,7 +228,7 @@ RowDefinitions="*">
                   Padding="0"
                   BackgroundColor="White"
                    BorderColor="White"
-                   Margin="16,10,0,20">
+                   Margin="16,0,0,20">
 
 
                         <Image Source="moneyheist.png" />
@@ -238,7 +246,7 @@ RowDefinitions="*">
                   Padding="0"
                   BackgroundColor="White"
                    BorderColor="White"
-                   Margin="16,10,0,20">
+                   Margin="16,0,0,20">
 
 
                         <Image Source="word_trails.png" />
@@ -252,7 +260,7 @@ RowDefinitions="*">
 
 
 
-            <Label Text="Grand Theft Auto: Definitive Edition!" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,30,0,0"/>
+            <Label Text="Grand Theft Auto: Definitive Edition!" FontFamily="Poppins-SemiBold.ttf"  TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,30,0,0"/>
 
 
             <ScrollView Orientation="Horizontal" >
@@ -271,7 +279,7 @@ RowDefinitions="*">
                   Padding="0"
                   BackgroundColor="White"
                    BorderColor="White" 
-                   Margin="16,10,0,20">
+                   Margin="16,0,0,20">
 
                         <Image Source="grand_theft_auto_iii.png" Aspect="AspectFill"/>
                     </Frame>
@@ -287,7 +295,7 @@ RowDefinitions="*">
                   Padding="0"
                   BackgroundColor="White"
                    BorderColor="White"
-                   Margin="16,10,0,20">
+                   Margin="16,0,0,20">
 
 
                         <Image Source="grand_theft_auto_san_andreas.png" />
@@ -304,7 +312,7 @@ RowDefinitions="*">
                   Padding="0"
                   BackgroundColor="White"
                    BorderColor="White"
-                   Margin="16,10,0,20">
+                   Margin="16,0,0,20">
 
 
                         <Image Source="grand_theft_auto_vice_city.png" />
@@ -318,7 +326,7 @@ RowDefinitions="*">
                 </Grid>
             </ScrollView>
 
-            <Label Text="Stranger Things Series!!" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,15,0,0"/>
+            <Label Text="Stranger Things Series!!" FontFamily="Poppins-SemiBold.ttf" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,15,0,0"/>
             <ScrollView Orientation="Horizontal">
                 <Grid ColumnDefinitions="*,*,*"
                     RowDefinitions="*">
@@ -332,7 +340,7 @@ RowDefinitions="*">
                         Padding="0"
                         BackgroundColor="White"
                          BorderColor="White"
-                         Margin="16,10,0,20">
+                         Margin="16,0,0,20">
 
 
                         <Image Source="st_1984_st.png" />
@@ -350,7 +358,7 @@ RowDefinitions="*">
                      Padding="0"
                      BackgroundColor="White"
                       BorderColor="White"
-                      Margin="16,10,0,20">
+                      Margin="16,0,0,20">
 
 
                         <Image Source="st3_thegame.png" />
@@ -368,7 +376,7 @@ RowDefinitions="*">
                      Padding="0"
                      BackgroundColor="White"
                       BorderColor="White"
-                      Margin="16,10,0,20">
+                      Margin="16,  0,0,20">
 
 
                     <Image Source="stranger_things_puzzle_tales.png" />
@@ -385,7 +393,7 @@ RowDefinitions="*">
 
             </ScrollView>
 
-            <Label Text="Stranger Things Series!!" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,15,0,0"/>
+            <Label Text="Other Recommendations!" FontFamily="Poppins-SemiBold.ttf" TextColor="White" FontSize="16" FontAttributes="Bold" Margin="16,15,0,0"/>
             <ScrollView Orientation="Horizontal">
                 <Grid ColumnDefinitions="*,*,*,*,*,*,*"
         RowDefinitions="*">
@@ -399,7 +407,7 @@ RowDefinitions="*">
                     Padding="0"
                     BackgroundColor="White"
                      BorderColor="White"
-                     Margin="16,10,0,20">   
+                     Margin="16,0,0,20">   
 
 
                         <Image Source="cut_the_rope_daily.png" />
@@ -417,7 +425,7 @@ RowDefinitions="*">
                      Padding="0"
                      BackgroundColor="White"
                       BorderColor="White"
-                      Margin="16,10,0,20">          
+                      Margin="16,0,0,20">          
 
 
                         <Image Source="rival_pirates.png" />
@@ -435,7 +443,7 @@ RowDefinitions="*">
                      Padding="0"
                      BackgroundColor="White"
                       BorderColor="White"
-                      Margin="16,10,0,20">      
+                      Margin="16,0,0,20">      
 
 
                         <Image Source="shatter_remastered.png" />
@@ -453,7 +461,7 @@ RowDefinitions="*">
                       Padding="0"
                       BackgroundColor="White"
                        BorderColor="White"
-                       Margin="16,10,0,20"> 
+                       Margin="16,0,0,20"> 
 
 
                         <Image Source="shooting_hoops.png" />
@@ -471,7 +479,7 @@ RowDefinitions="*">
                   Padding="0"
                   BackgroundColor="White"
                    BorderColor="White"
-                   Margin="16,10,0,20"> 
+                   Margin="16,0,0,20"> 
 
 
                         <Image Source="teeter.png" />
@@ -489,7 +497,7 @@ RowDefinitions="*">
                   Padding="0"
                   BackgroundColor="White"
                    BorderColor="White"
-                   Margin="16,10,0,20">
+                   Margin="16,0,0,20">
 
 
                         <Image Source="wonderputt_forever.png" />
@@ -507,7 +515,7 @@ RowDefinitions="*">
                     Padding="0"
                     BackgroundColor="White"
                      BorderColor="White"
-                     Margin="16,10,0,20">   
+                     Margin="16,0,0,20">   
 
 
                         <Image Source="world_of_goo.png" />
